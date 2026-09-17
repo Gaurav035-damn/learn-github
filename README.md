@@ -1,5 +1,4 @@
 # learn-github
 learning about github and stuff
-<b>
+<br>
 my code
-</b>
