@@ -18,3 +18,38 @@ p,ul,ol {
   color: #1d1d1d;
   font-family: sans-serif;
 }
+/* Nav Bar */
+.navbar {
+  background-color: rgb(135, 206, 13);
+  color: aquamarine;
+  padding: 8px;
+  line-height: 1.5;
+  font-size: 1.0em;
+  border-radius: 12px;
+}
+.navbar a{
+  color: blue;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar li{
+  margin-right: 22px;
+}
+pre{
+  background-color: rgb(52, 1, 1);
+  padding: 16px;
+  border-radius: 10px;
+  overflow: auto;
+}
+code {
+  color: #1efe2a;
+}

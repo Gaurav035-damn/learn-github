@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=4.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="pomodoro.css">
     <title>Pomodoro Timer</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <menu>
         <li>
           <a target="_blank" href="/">Home</a>
@@ -29,6 +30,30 @@
     </nav>
     <div>
       <h1>Pomodoro Timer</h1>
+    </div>
+    <div class="pomodoro">
+      <div class="pomodoro__time">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+      <div class="pomodoro_buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div class="pomodoro__settings">
+      <label for="work-time">Work Time</label>
+    <input type="number" id="work-time" value="25" min="1" max="25"/>
+    <label for="break-time">Break Time</label>
+    <input type="number" id="break-time" value="5" min="1" max="25"/>
+    </div>
+    <div class="pomodoro__status">
+      <span id="status">Work</span>
+    </div>
+    <div>
+      <div class="pomodoro__progress">
+        <div id="progress"></div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
