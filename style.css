@@ -20,7 +20,7 @@ p,ul,ol {
 }
 /* Nav Bar */
 .navbar {
-  background-color: rgb(135, 206, 13);
+  background-color: rgb(84, 83, 83);
   color: aquamarine;
   padding: 8px;
   line-height: 1.5;
@@ -28,7 +28,7 @@ p,ul,ol {
   border-radius: 12px;
 }
 .navbar a{
-  color: blue;
+  color: rgb(214, 214, 224);
   text-decoration: none;
 }
 .navbar a:hover {

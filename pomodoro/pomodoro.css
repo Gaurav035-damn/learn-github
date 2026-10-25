@@ -1,47 +1,54 @@
 html{
-    font-family: cursive;
-    background-color: rgb(191, 175, 120);
+    font-family: monospace;
+    background-color: rgb(175,73,73);
+    color: #eeeeee;
 }
 .pomodoro {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #eeeeee;
 }
 .pomodoro__time {
-    font-size: 4.4rem;
+    font-size: 8rem;
     font-weight: 300;
+    color: #eeeeee;
 }
 .pomodoro_buttons {
     display: flex;
     justify-content: center;
-    padding: 0.14rem;
+    padding: 0.2rem;
 }
 .pomodoro_buttons button{
-    font-size: .8rem;
-    padding: .2rem .65rem;
-    margin: 0 .4rem;
+    font-size: 1rem;
+    padding: .7rem 1rem;
+    margin: 0 .6rem;
     border: none;
-    border-radius: 45px;
+    border-radius: 4px;
     cursor: pointer;
     font-family: monospace;
 }
 .pomodoro_buttons #start{
-    background-color: #4caf50;
-    color: white;
+    font-size: 2.5rem;
+    padding: .6rem 2rem;
+    background-color: #b17469;
+    border-radius:5px;
+    color: rgb(9, 3, 3);
+    border: 2px double rgb(111, 74, 74);
 }
 .pomodoro_buttons #pause{
-    background-color: rgb(255, 0, 0);
-    color: white;
+    background-color: rgb(131, 128, 128);
+    color: rgb(0, 0, 0);
 }
 .pomodoro_buttons #reset{
-    background-color: rgb(124, 74, 233);
-    color: white;
+    color: rgb(16, 16, 16);
 }
 .pomodoro__settings {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    color: #eeeeee;
 }
 .pomodoro__settings label{
     font-size: 1rem;
@@ -58,6 +65,7 @@ html{
     font-size: 1.5rem;
     font-weight: 100;
     margin: .6rem;
+    color: #eeeeee;
 }
 .pomodoro__progress {
     width: 300px;
@@ -66,4 +74,10 @@ html{
     margin-top: 1rem;
     border-radius: 100px;
     overflow: hidden;
+}
+#progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
 }
