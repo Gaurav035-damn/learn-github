@@ -61,7 +61,9 @@
   }
   function switchMode(){
     isWorkTime = !isWorkTime;
-
+    timeLeft = (isWorkTime ? workTime : breakTime) * 60;
+  statusDisplay.textContent = isWorkTime ? "Work" : "Play!!!";
+  updateDisplay();
   }
   startButton.addEventListener("click",startTimer)
   pauseButton.addEventListener("click",pauseTimer)
