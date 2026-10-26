@@ -85,6 +85,7 @@
     const progress = ((totalTime-timeLeft)/totalTime)*100;
     progressBar.style.width = progress + "%";
     progressBar.style.backgroundColor = isWorkTime ? "#4caf50" : "#2196f3"
+    document.body.style.backgroundColor = isWorkTime ? "rgb(175, 73, 73)" : "#4caf50"
   }
 
 
