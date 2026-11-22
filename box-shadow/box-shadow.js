@@ -30,7 +30,7 @@ function updateShadow(){
     const boxShadowValue = `${insetValue}${horizontal.value}px ${vertical.value}px ${blur.value}px ${spread.value}px ${shadowColor}`;
 
     box.style.boxShadow= boxShadowValue; 
-    code.textContent =  `box-shadow: ${boxShadowValue}';`
+    code.textContent =  `box-shadow: ${boxShadowValue};`
 
     horizontalValue.textContent = `${horizontal.value}px;`
     verticalValue.textContent = `${vertical.value}px;`

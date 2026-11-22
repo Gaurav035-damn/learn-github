@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="library.css"></link>
     <title>Library</title>
 </head>
 <body>
@@ -23,6 +24,102 @@
         </li>
       </menu>
     </nav>
-    <h1>My Library</h1>
+    <main class="container">
+      <h1>Library Management</h1>
+      
+      <div class="view-toggle">
+        <button id=""search-view-btn class="active">Search Books</button>
+        <button id="library-view-btn">My Library</button>
+      </div>
+      <div id="search-section ">
+        <div class="search-container">
+          <div class="basic-search">
+            <input type="text" id=""search-input placeholder="Search for books..." aria-label="search-input"/>
+            <button id="search-btn">Search</button>
+          </div>
+          <div class="advanced-search">
+            <div class="search-field">
+              <label for="author">Author:</label>
+              <input type="text" id="author" placeholder="Author name"/>
+            </div>
+            <div class="search-field">
+              <label for="language">Language</label>
+              <select id="language">
+                <option value="eng">English</option>
+                <option value="spa">Spanish</option>
+                <option value="fra">French</option>
+                <option value="ger">German</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="subject">Subject/Genre:</label>
+              <input type="text" id="subject" placeholder="e.g.,Fiction,Science..."/>
+            </div>
+            <div class="search-field">
+              <label for="publisher">Publisher:</label>
+              <input type="text" id="publisher" placeholder="Publisher name" />
+
+            </div>
+          </div>
+        </div>
+        <div id="loading" class="loading hidden">
+          <div class="spinner"></div>
+          <p>Searching Books...</p>
+        </div>
+        <div id="error-message" class="error-message" hidden>
+        </div>
+        <div class="results-container"></div>
+        <table id="results-table" class="books-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cover</th>
+              <th>Book Details</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="results-body">
+
+          </tbody>
+        </table>
+      </div>
+      <div id="library-section" class="hidden">
+        <h2>My Library</h2>
+        <table class="books-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cover</th>
+              <th>Book Details</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="library-body">
+          </tbody>
+        </table>
+      </div>
+    </main>
+<template id="book-row-template">
+  <tr>
+    <td class="book-id"></td>
+    <td class="book-cover">
+    <img src="https://placehold.co/120x180" alt="Book cover" class="cover-image ">
+   </td>
+
+   <td class="book-details">
+    <h3 class="book-title"></h3>
+    <p class="book-author"></p>
+    <p class="book-year"></p>
+    <p class="book-pages"></p>
+    <p class="book-description"></p>
+   </td>
+   <td class="book-actions">
+    <button class="mark-button"></button>
+    <button class="delete-button hidden">Remove from Library</button>
+   </td>
+  </tr>
+</template>
+<script src="library.js"></script>
 </body>
 </html>
